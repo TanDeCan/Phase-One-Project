@@ -1,0 +1,44 @@
+[
+    {
+        "DayOfWeek": "Monday",
+        "Condition": "Cloudy",
+        "HighTemp": 38,
+        "LowTemp": 23
+    },
+    {
+        "DayOfWeek": "Tuesday",
+        "Condition": "Partly Cloudy",
+        "HighTemp": 47,
+        "LowTemp": 29
+    },
+    {
+        "DayOfWeek": "Wednesday",
+        "Condition": "Sunny",
+        "HighTemp": 56,
+        "LowTemp": 45
+    },
+    {
+        "DayOfWeek": "Thursday",
+        "Condition": "Partly Cloudy",
+        "HighTemp": 61,
+        "LowTemp": 48
+    },
+    {
+        "DayOfWeek": "Friday",
+        "Condition": "Rainy",
+        "HighTemp": 60,
+        "LowTemp": 57
+    },
+    {
+        "DayOfWeek": "Saturday",
+        "Condition": "Rainy",
+        "HighTemp": 66,
+        "LowTemp": 51
+    },
+    {
+        "DayOfWeek": "Sunday",
+        "Condition": "Partly Cloudy",
+        "HighTemp": 67,
+        "LowTemp": 55
+    }
+]
