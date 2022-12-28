@@ -25,21 +25,23 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
-  .list-li {
+.current-manga {
     list-style: none;
     width: 200px;
     box-shadow: 4px 4px 10px #c9c8c8;
     padding: 5px;
     margin: 10px;
-  }
+    text-align: center;
+}
   
-  .list-li h3 {
-    height: 70px;
-  }
+.current-manga h3 {
+    height: 30px;
+}
   
-  .list-li img{
+.current-manga img{
     width: 190px;
     height: 265px;
-  }
+    ;
+}
