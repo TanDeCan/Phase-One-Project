@@ -3,9 +3,38 @@ body {
     
 }
 
+
 h1 {
-    text-align: center;
-    color: #344e41;
+  text-align: center;
+  color: white;
+  padding: 200px 0;
+  text-shadow: 2px 4px #344e41;
+  font-family: Verdana;
 }
 
+.list ul {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list-li {
+    list-style: none;
+    width: 200px;
+    box-shadow: 4px 4px 10px #c9c8c8;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .list-li h3 {
+    height: 70px;
+  }
+  
 
+  form {
+    text-align: center;
+    
+  }
