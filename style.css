@@ -1,15 +1,21 @@
 body {
-    background-color: #cce3de ;
+    background-color: #f1e9da ;
     
 }
 
 
-h1 {
-  text-align: center;
-  color: white;
-  padding: 200px 0;
-  text-shadow: 2px 4px #344e41;
-  font-family: Verdana;
+
+
+#header {
+    background-color: #aed5bb;
+    background-image: url("https://images.unsplash.com/photo-1613376023733-0a73315d9b06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover ;
+    background-repeat:no-repeat;
+    text-align: center;
+    color: #b35757;
+    padding: 200px 0;
+    text-shadow: 2px 2px #ffe4e4;
+    font-family: Verdana;
 }
 
 .list ul {
@@ -33,8 +39,7 @@ h1 {
     height: 70px;
   }
   
-
-  form {
-    text-align: center;
-    
+  .list-li img{
+    width: 190px;
+    height: 265px;
   }
