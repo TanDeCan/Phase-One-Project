@@ -1,7 +1,9 @@
-
-const pricing = (priceNum) =>{
-    return `$${priceNum.toFixed(2)}`
+// Makes the price easier to read.
+const pricing = (price) =>{
+    let formattedPricing = Number(price).toFixed(2);
+    return `$${formattedPricing}`;
 }
+
 
 //Creates the already known list of manga
 function acquiredManga(manga) {
@@ -24,10 +26,32 @@ function acquiredManga(manga) {
     img.src = manga.imageUrl
     img.alt = `${manga.title} cover`
 
-    li.append(h3, pVolume, pAuthor, pPrice, img)
+    const btn = document.createElement('button')
+    btn.textContent = 'Delete'
+
+    btn.addEventListener('click', () => {
+        li.remove()})
+
+    li.append(h3, pVolume, pAuthor, pPrice, img, btn)
     document.querySelector('#manga-list').append(li)
 }
 
 mangaSection.inventory.forEach(manga => {
     acquiredManga(manga);
+})
+
+// Allows new manga to be added
+const newManga = document.querySelector('#manga-form')
+
+newManga.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const addingManga = {
+        title: e.target.title.value,
+        volume: e.target.volume.value,
+        author: e.target.author.value,
+        price: e.target.price.value,
+        imageUrl: e.target.imageUrl.value
+    }
+    acquiredManga(addingManga)
+    
 })

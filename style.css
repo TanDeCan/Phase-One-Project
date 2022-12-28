@@ -45,3 +45,12 @@ body {
     height: 265px;
     ;
 }
+
+form {
+  margin: 10px auto 10px auto;
+  width: 400px; 
+  max-height: 371px;
+  transition: max-height 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
