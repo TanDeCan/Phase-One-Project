@@ -54,3 +54,8 @@ form {
   display: flex;
   flex-direction: column;
 }
+.error {
+  text-align: center;
+  background: lightcoral;
+  padding: 20px;
+}

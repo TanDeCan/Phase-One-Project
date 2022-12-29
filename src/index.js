@@ -36,10 +36,6 @@ function acquiredManga(manga) {
     document.querySelector('#manga-list').append(li)
 }
 
-mangaSection.inventory.forEach(manga => {
-    acquiredManga(manga);
-})
-
 // Allows new manga to be added
 const newManga = document.querySelector('#manga-form')
 
@@ -55,3 +51,27 @@ newManga.addEventListener('submit', (e) => {
     acquiredManga(addingManga)
     
 })
+
+fetch('http://localhost:3000/mangas')
+   .then(response => response.json())
+   .then(mangas => 
+    {console.log(mangas);
+    mangas.forEach(manga => {acquiredManga(manga)})
+    })
+    .catch(err => {
+        console.error(err);
+        makeError('Make sure to start json-server!')
+      });
+    
+function makeError(message) {
+    const main = document.querySelector('main');
+    const errorDiv = document.createElement('div');
+    errorDiv.className = "error";
+    errorDiv.textContent = message;
+    main.prepend(errorDiv);
+    window.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") {
+          errorDiv.remove();
+        }
+    })
+} 
