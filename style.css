@@ -13,7 +13,7 @@ body {
     background-repeat:no-repeat;
     text-align: center;
     color: #b35757;
-    padding: 200px 0;
+    padding: 100px 0;
     text-shadow: 2px 2px #ffe4e4;
     font-family: Verdana;
 }
@@ -34,6 +34,7 @@ body {
     padding: 5px;
     margin: 10px;
     text-align: center;
+    background-color: #fff6f6;
 }
   
 .current-manga h3 {
