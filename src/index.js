@@ -30,6 +30,9 @@ function acquiredManga(manga) {
     btn.textContent = 'Delete'
 
     btn.addEventListener('click', () => {
+        fetch(`http://localhost:3000/mangas/${manga.id}`, {
+            method: 'DELETE',
+        })
         li.remove()})
 
     li.append(h3, pVolume, pAuthor, pPrice, img, btn)
