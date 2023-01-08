@@ -70,9 +70,9 @@ fetch('http://localhost:3000/mangas')
     })
     .catch(err => {
         console.error(err);
-        makeError('Make sure to start json-server!')
+        makeError('Hey... Could you please check and see if you have json-server on?')
       });
-    
+//Sends an error message in web page isn't opened with json server
 function makeError(message) {
     const main = document.querySelector('main');
     const errorDiv = document.createElement('div');
